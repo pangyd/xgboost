@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/usr/xgboost/deploy/luzhou_AQI_prediction.py", line 512, in <module>
+    hourly_data = get_weather_data(hourly_data)
+  File "/usr/xgboost/deploy/luzhou_AQI_prediction.py", line 304, in get_weather_data
+    weather_data = pd.read_csv(
+  File "/root/miniconda3/envs/python3.9/lib/python3.9/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/root/miniconda3/envs/python3.9/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 678, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/root/miniconda3/envs/python3.9/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/root/miniconda3/envs/python3.9/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 932, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/root/miniconda3/envs/python3.9/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1216, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "/root/miniconda3/envs/python3.9/lib/python3.9/site-packages/pandas/io/common.py", line 786, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/real/WEATHER/WEATHER_2022-12-04.csv'

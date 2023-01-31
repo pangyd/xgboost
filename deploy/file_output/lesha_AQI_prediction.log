@@ -1,0 +1,7 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/usr/xgboost/deploy/leshan_AQI_prediction.py", line 534, in <module>
+    hourly_predict_data(pollutant_data, hourly_data, pollutant)   # 预测
+  File "/usr/xgboost/deploy/leshan_AQI_prediction.py", line 175, in hourly_predict_data
+    pred_data["{}".format(pollutant)][i + 2] = y_pred[-1] + PM2_5_mae[i]
+IndexError: list index out of range
